@@ -1,0 +1,136 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E3E6E6;
+}
+
+.navbar {
+    font-weight     : bold;
+    justify-content : space-between;
+    place-items     : center;
+    color           : #F0FFFF;
+    display         : flex;
+    background-color: #131921;
+    width           : 100vw;
+    height          : 10vh;
+}
+
+.navbar li {
+    list-style-type: none;
+}
+
+#search {
+    border       : 1px solid gray;
+    border-radius: 4.5px;
+    margin       : 2vh 1vw;
+    height       : 6vh;
+    width        : 35vw;
+}
+
+.option {
+    display         : flex;
+    justify-content : space-around;
+    background-color: #232F3E;
+    color           : #fff;
+    align-items     : center;
+}
+
+.option li {
+    list-style-type: none;
+    font-size      : 14px;
+    font-weight    : 900;
+    margin         : 0px 5px;
+}
+
+.join-prime {
+    height: 5vh;
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+#slider figure {
+    position     : relative;
+    width        : 500%;
+    margin       : 0;
+    left         : 0;
+    text-align   : left;
+    font-size    : 0;
+    animation : slide 15s infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 0%;
+    }
+
+    20% {
+        left: -100%;
+    }
+
+    40% {
+        left: -200%;
+    }
+
+    60% {
+        left: -300%;
+    }
+
+    80% {
+        left: -400%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+.iteam {
+
+    display              : grid;
+    grid-template-rows   : 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap             : 25px;
+    margin               : 25px 10px;
+}
+
+.iteams {
+    background-color: #F0FFFF;
+    display         : grid;
+    place-items     : center;
+    padding         : 20px;
+    height          : auto;
+    border-radius   : 2.5px;
+}
+
+.iteams img {
+    margin: 10px 0;
+    height: 50vh;
+}
+
+.iteams h2 {
+    margin-left: -150px;
+}
+
+.iteams a {
+    text-decoration: none;
+    margin-left    : -200px;
+}
+
+footer {
+    padding-top          : 30px;
+    color                : #F0FFFF;
+    background-color     : #232F3E;
+    display              : grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
